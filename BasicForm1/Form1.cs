@@ -17,21 +17,6 @@ namespace BasicForm1
             InitializeComponent();
         }
 
-        private double textBox1_TextChanged()
-        {
-            string work = Console.ReadLine();
-            double hwork = Convert.ToDouble(work);
-            return hwork;
-        }
-
-        private double textBox2_TextChanged()
-        {
-            string pay = Console.ReadLine();
-            double hpay;
-            double.TryParse(pay, out hpay);
-            return hpay;
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             // Calculate the gross pay
