@@ -35,12 +35,11 @@ namespace BasicForm1
         private void button1_Click(object sender, EventArgs e)
         {
             // Calculate the gross pay
-            double hwork = textBox1_TextChanged();
-            double hpay = textBox2_TextChanged();
-            double cal = (hwork * hpay);
-            Console.WriteLine(hwork);
-            // MessageBox.Show(String.Format("The Gross Pay is {0}", cal));
-
+            decimal hwork = Decimal.Parse(textBox1.Text); 
+            decimal hpay = Decimal.Parse(textBox2.Text); 
+            decimal cal = (hwork * hpay); 
+            MessageBox.Show("The Gross Pay is " + cal.ToString("C"));
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,7 +47,6 @@ namespace BasicForm1
             // Clear the data
             textBox1.Clear();
             textBox2.Clear();
-
         }
 
         private void button3_Click(object sender, EventArgs e)
