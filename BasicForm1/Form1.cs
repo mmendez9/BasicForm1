@@ -39,20 +39,22 @@ namespace BasicForm1
             double hpay = textBox2_TextChanged();
             double cal = (hwork * hpay);
             Console.WriteLine(hwork);
-           // MessageBox.Show(String.Format("The Gross Pay is {0}", cal));
-            
+            // MessageBox.Show(String.Format("The Gross Pay is {0}", cal));
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             // Clear the data
+            textBox1.Clear();
+            textBox2.Clear();
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             // Close the program
-            
+            this.Close();
         }
 
     }
